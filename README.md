@@ -15,9 +15,14 @@ product, built to paste directly into a Shopify product description / page edito
 - `assets/lp-05b.png` — "着用シーン" (wearing-scene) section inserted
   immediately after `lp-05.png` (materials), showing the necklace worn in
   4 everyday contexts (desk work / home / outing / housework).
+- `assets/lp-07.png` — "首・肩を気遣う毎日に。こだわりの4つの素材" section,
+  shown as an exploded-view diagram of the pendant (EMC sheet + the 4
+  materials stacked underneath) rather than the earlier 4-icon layout.
 - `assets/lp-09.png` — closing tagline section ("身につけるだけで、心も身体も、
-  心地よく。"), placed as the final content section before the last CTA.
-  Kept as PNG (alpha channel).
+  心地よく。"), now showing the 4 pendant style variants (rose-gold heart,
+  black dog tag, silver round, gold round) instead of 2 necklaces, placed
+  as the final content section before the last CTA. Kept as PNG (alpha
+  channel).
 - `assets/cta-button.png` — the repeated CTA button ("商品はこちら"), red
   rounded-pill style with play-arrow icon, cropped tight to its visible
   content and resized to 660px wide (285px tall), alpha preserved (kept as
