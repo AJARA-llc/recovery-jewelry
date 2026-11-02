@@ -18,9 +18,10 @@ product, built to paste directly into a Shopify product description / page edito
 - `assets/lp-09.png` — closing tagline section ("身につけるだけで、心も身体も、
   心地よく。"), placed as the final content section before the last CTA.
   Kept as PNG (alpha channel).
-- `assets/cta-button.png` — the repeated CTA button ("商品はこちら"), cropped
-  tight to its visible content and resized to 660px wide, alpha preserved
-  (kept as PNG, not converted to JPEG).
+- `assets/cta-button.png` — the repeated CTA button ("商品はこちら"), red
+  rounded-pill style with play-arrow icon, cropped tight to its visible
+  content and resized to 660px wide (285px tall), alpha preserved (kept as
+  PNG, not converted to JPEG).
 
 ## How to publish on Shopify
 
