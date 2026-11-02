@@ -10,8 +10,11 @@ product, built to paste directly into a Shopify product description / page edito
 - `index.html` — local preview wrapper (loads the same markup from `assets/`
   via relative paths) so the layout can be checked in a browser before
   touching Shopify. Not for upload.
-- `assets/lp-01.jpg` … `lp-08.jpg` — the 8 main source images in display
-  order, resized to a consistent 750px width and re-compressed as JPEG q85.
+- `assets/lp-01.png` … `lp-08.png` — the 8 main source images in display
+  order, each at its native export resolution (PNG).
+- `assets/lp-05b.png` — "着用シーン" (wearing-scene) section inserted
+  immediately after `lp-05.png` (materials), showing the necklace worn in
+  4 everyday contexts (desk work / home / outing / housework).
 - `assets/lp-09.png` — closing tagline section ("身につけるだけで、心も身体も、
   心地よく。"), placed as the final content section before the last CTA.
   Kept as PNG (alpha channel).
@@ -21,13 +24,13 @@ product, built to paste directly into a Shopify product description / page edito
 
 ## How to publish on Shopify
 
-1. In Shopify Admin, go to **Content → Files** and upload all 10 files from
-   `assets/` (the 9 `lp-01.jpg` … `lp-08.jpg` / `lp-09.png` images plus
-   `cta-button.png`; keep these filenames so they're easy to match back to
-   the snippet).
+1. In Shopify Admin, go to **Content → Files** and upload all 11 files from
+   `assets/` (the 10 `lp-01.png` … `lp-09.png` images, including `lp-05b.png`,
+   plus `cta-button.png`; keep these filenames so they're easy to match back
+   to the snippet).
 2. For each uploaded file, copy its CDN URL (click the file → "Copy link",
-   something like `https://cdn.shopify.com/s/files/1/XXXX/XXXX/files/lp-01.jpg`).
-3. Open `shopify-snippet.html`, and for each `<img src="lp-XX.jpg">` /
+   something like `https://cdn.shopify.com/s/files/1/XXXX/XXXX/files/lp-01.png`).
+3. Open `shopify-snippet.html`, and for each `<img src="lp-XX.png">` /
    `<img src="cta-button.png">`, replace the filename with the matching CDN
    URL.
 4. Replace every `href="#buy"` on the 5 CTA button links with the actual
@@ -45,6 +48,7 @@ product, built to paste directly into a Shopify product description / page edito
 ## Notes
 
 - Image order follows the numbering in the original export (01 → 08), with
+  `lp-05b.png` (wearing scenes) inserted right after `lp-05.png` and
   `lp-09.png` appended as the closing section.
 - The first image uses `loading="eager" fetchpriority="high"` (likely LCP
   element); the rest are `loading="lazy"`.
